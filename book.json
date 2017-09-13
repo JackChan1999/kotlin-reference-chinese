@@ -1,0 +1,35 @@
+{
+    "language": "zh-hans",
+    "plugins": ["regexplace"],
+    "pluginsConfig": {
+        "regexplace": {
+            "substitutes": [
+                {
+                    "pattern": "<em>([^<]+)</em>\\{: ?\\.keyword\\ ?}",
+                    "flags": "g",
+                    "substitute": "<em><strong><code>$1</code></strong></em>"
+                },
+                {
+                    "pattern": "<p>\\{:#([^} ]+)\\}</p>",
+                    "flags": "g",
+                    "substitute": "<a name=\"$1\"></a>"
+                },
+                {
+                    "pattern": "\"/docs/tutorials/",
+                    "flags": "g",
+                    "substitute": "\"https://www.kotlincn.net/docs/tutorials/"
+                },
+                {
+                    "pattern": "\"/docs/diagnostics/",
+                    "flags": "g",
+                    "substitute": "\"https://www.kotlincn.net/docs/diagnostics/"
+                },
+                {
+                    "pattern": "\"/community/",
+                    "flags": "g",
+                    "substitute": "\"https://www.kotlincn.net/community/"
+                }
+            ]
+        }
+    }
+}
