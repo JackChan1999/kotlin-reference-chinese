@@ -1,0 +1,10 @@
+{ 
+"description": "kotlin-reference-chinese",
+"title" : "kotlin-reference-chinese",
+"language": "zh-hans",
+"author" : "AllenIverson",
+"gitbook": "3.2.3",
+"pdf": {
+        "fontFamily": "等线"
+    }
+}
